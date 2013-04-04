@@ -1,0 +1,16 @@
+.highlighted {
+    font-weight: bold;
+}
+
+.user {
+    padding-right: 10px;
+    font-size: 110%;
+}
+
+.message {
+    line-height: 140%;
+}
+
+.user:after {
+    content: ':';
+}

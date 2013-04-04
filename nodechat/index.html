@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Chat with JSON!</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- <link href="bootstrap/css/bootstrap.css" rel="stylesheet" media="screen"> -->
+  </head>
+  <body>
+
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span12">
+          <h1>Top</h1>
+          <div class="row-fluid">
+
+            <div class="span6">
+              <form action="https://api.parse.com/1/classes/messages" method="POST">
+                <fieldset class="textBlock">
+                  <input type="text" class="name" placeholder="username" />
+                  <textarea class="writeup" placeholder="put it here!"></textarea>
+                  <input type="submit" class="submit" value="send!">
+                </fieldset>
+              </form>
+            </div>
+
+            <div class="span6">
+              <form action="">
+                <fieldset class="roomBlock">
+                  <input type="text" class="room" placeholder="roomname"/>
+                  <input type="submit" class="roomSubmit" value="create room!"/>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row-fluid show_content">
+        <div class="span12">
+            <div class="span8 message_container">
+              <h2>Messages</h2>
+            </div>
+            <div class="span2 roomnames">
+              <h2>Rooms</h2>
+            </div>
+            <div class="span2 friend_names">
+              <h2>Friends</h2>
+            </div>
+        </div>
+      </div>
+
+    </div>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="underscore.min.js"></script>
+    <script type="text/javascript" src="client/utils.js"></script>
+    <script type="text/javascript" src="client/app.js"></script>
+    <!-- // <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script> -->
+    <!-- <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script> -->
+  </body>
+</html>
